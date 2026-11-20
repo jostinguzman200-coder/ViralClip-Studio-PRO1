@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ViralClip Studio PRO</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<aside class="sidebar">
+  <div class="brand"><div class="logo">V</div><div><b>ViralClip</b><small>STUDIO PRO</small></div></div>
+  <div class="navlabel">ESPACIO DE TRABAJO</div>
+  <button class="nav active">▣　Panel principal</button><button class="nav">✂　Crear clips</button><button class="nav">▤　Editor</button><button class="nav">◉　Directos <span class="soon">EXTRA</span></button>
+  <div class="sidebottom"><div class="statusdot"></div><span>Procesamiento local</span><small>Windows · Privado</small></div>
+</aside>
+<main>
+  <header><div><div class="eyebrow">TU ESTUDIO DE CONTENIDO</div><h1>Crea clips que atrapen.</h1><p>Importa un video y prepara clips verticales para tus redes.</p></div><div class="localpill">● MOTOR LOCAL</div></header>
+  <section class="stats"><div class="stat"><small>PROYECTO</small><b id="projectState">Sin video</b></div><div class="stat"><small>FORMATO</small><b>9:16 · 1080p</b></div><div class="stat"><small>EXPORTACIÓN</small><b>MP4 · H.264</b></div></section>
+  <section class="workspace">
+    <div class="panel media">
+      <div class="panelhead"><div><span class="eyebrow">01 / FUENTE</span><h2>Tu video</h2></div><button id="importBtn" class="primary">＋ Importar video</button></div>
+      <div id="dropzone" class="dropzone"><div class="uploadicon">↑</div><b>Importa un video desde tu PC</b><p>MP4, MOV, MKV, WEBM y AVI</p><button id="chooseBtn" class="secondary">Elegir archivo</button></div>
+      <video id="preview" controls hidden></video>
+      <div id="filename" class="filename">Aún no has seleccionado ningún archivo</div>
+      <div class="note">Tus archivos se procesan en este equipo. No se suben a un servidor.</div>
+    </div>
+    <div class="panel editor">
+      <div class="panelhead"><div><span class="eyebrow">02 / EDICIÓN</span><h2>Crear un clip</h2></div><span class="tag">MODO MANUAL</span></div>
+      <label>Inicio (segundos)<input id="start" type="number" min="0" step="0.1" value="0"></label>
+      <label>Final (segundos)<input id="end" type="number" min="0" step="0.1" value="30"></label>
+      <label class="check"><input id="vertical" type="checkbox" checked> Recorte vertical 9:16 (1080 × 1920)</label>
+      <button id="exportBtn" class="primary wide" disabled>Exportar clip MP4　↗</button>
+      <div id="message" class="message">Importa un video para activar la exportación.</div>
+      <div class="featuregrid"><div><b>01</b><span>Recorte local</span></div><div><b>02</b><span>Sin marca de agua</span></div><div><b>03</b><span>Exportación MP4</span></div></div>
+    </div>
+  </section>
+  <section class="panel roadmap"><div class="panelhead"><div><span class="eyebrow">SIGUIENTE ETAPA</span><h2>Funciones que añadiremos</h2></div><span class="tag">EN DESARROLLO</span></div><div class="roaditems"><div><b>IA de transcripción</b><small>Whisper local y marcas de tiempo</small></div><div><b>Detección de momentos virales</b><small>Selección automática y puntuación</small></div><div><b>Subtítulos dinámicos</b><small>Palabra por palabra y estilos</small></div><div><b>Directos</b><small>Captura compatible según plataforma</small></div></div></section>
+  <footer>ViralClip Studio PRO · Versión inicial de escritorio · No afiliado a SupoClip</footer>
+</main><script src="renderer.js"></script></body></html>
